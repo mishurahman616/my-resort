@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 
 //front end Routing
 Route::get('/', [SiteResortController::class, 'index']);
+Route::get('/resortDetails/{id}', [SiteResortController::class, 'detailsView']);
 
 //Admin Panel Routing
 Route::group(['prefix' => 'admin'], function() {
